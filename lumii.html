@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #age-verification {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="age-verification">
+        <h1>Bem-vindo à Lumi</h1>
+        <p>Você tem 18 anos ou mais?</p>
+        <button onclick="verifyAge(true)">Sim, tenho 18 anos ou mais</button>
+        <button onclick="verifyAge(false)">Não, sou menor de 18 anos</button>
+    </div>
+
+    <script>
+        function verifyAge(isAdult) {
+            if (isAdult) {
+                window.location.href = "https://lista.mercadolivre.com.br/lumi-frisante#D[A:lumi%20frisante]";
+            } else {
+                alert("Desculpe, você precisa ter 18 anos ou mais para acessar este conteúdo.");
+            }
+        }
+    </script>
+</body>
+</html>
